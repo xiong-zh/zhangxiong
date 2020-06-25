@@ -2,5 +2,9 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 
-def hello(request):
-    return HttpResponse('欢迎使用Django！')
+def index(request):
+    return render(request,template_name='index.html')
+
+
+def single(request):
+    return render(request, template_name='single.html')
